@@ -214,7 +214,86 @@ body {
         transform: translateY(0);
     }
 }
-#linkedin{
+
+#linkedin {
     color: white;
 }
 
+/* Media Queries for Responsiveness */
+
+/* For tablets */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .main {
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .main {
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .skills .bar span {
+        animation-duration: 0.8s;
+    }
+}
