@@ -221,22 +221,24 @@ body {
 
 /* Media Queries for Responsiveness */
 
-/* For tablets */
+/* For tablets and mobile phones, use 100% width for container */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        width: 95%;
+        width: 100%;  /* Allow container to take up full width on small devices */
+        padding: 0;
+        box-shadow: none;
     }
 
     .sidebar {
-        width: 100%;
+        width: 100%;   /* Sidebar takes full width */
         margin-bottom: 20px;
-        border-radius: 15px 15px 0 0;
+        border-radius: 15px;
     }
 
     .main {
-        width: 100%;
-        border-radius: 0 0 15px 15px;
+        width: 100%;   /* Main content takes full width */
+        border-radius: 0;
     }
 
     .profile-pic {
@@ -245,35 +247,35 @@ body {
     }
 
     .name {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .title {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .section-title {
-        font-size: 20px;
+        font-size: 22px;
     }
 }
 
-/* For mobile phones */
+/* For mobile screens */
 @media (max-width: 480px) {
     .container {
         flex-direction: column;
         width: 100%;
-        padding: 10px;
+        padding: 0 10px;
     }
 
     .sidebar {
-        width: 100%;
+        width: 100%;   /* Sidebar takes full width */
         margin-bottom: 20px;
-        border-radius: 15px 15px 0 0;
+        border-radius: 15px;
     }
 
     .main {
         width: 100%;
-        border-radius: 0 0 15px 15px;
+        border-radius: 0;
     }
 
     .profile-pic {
@@ -291,9 +293,5 @@ body {
 
     .section-title {
         font-size: 18px;
-    }
-
-    .skills .bar span {
-        animation-duration: 0.8s;
     }
 }
